@@ -1,15 +1,11 @@
 FROM node:20-alpine3.17
 
-EXPOSE 8080
-
 WORKDIR /usr/src/app
 
-COPY package.json package.json
-
-RUN apk add --no-cache tini
+COPY package*.json ./
 
 RUN npm install
 
-COPY . . 
+COPY ./src ./src
 
-CMD ["npm", "start"]
+CMD [ "npm", "start"]
