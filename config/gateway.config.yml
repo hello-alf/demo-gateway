@@ -3,6 +3,7 @@ http:
   hostname: 0.0.0.0
 https:
   port: 8443
+  hostname: 0.0.0.0
 admin:
   port: 9876
   host: localhost
