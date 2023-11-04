@@ -14,7 +14,7 @@ EXPOSE 8080
 EXPOSE 443 
 
 # Admin API
-EXPOSE 9876 
+EXPOSE 8443 
 
 RUN apk --no-cache add nodejs ca-certificates
 
