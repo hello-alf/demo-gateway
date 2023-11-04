@@ -16,4 +16,6 @@ EXPOSE 8443
 # Admin API
 EXPOSE 9876 
 
+RUN apk --no-cache add nodejs ca-certificates
+
 CMD ["npm", "start"]
