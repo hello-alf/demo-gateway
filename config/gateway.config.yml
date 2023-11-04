@@ -1,5 +1,7 @@
 http:
   port: 8080
+http:
+  port: 443
 admin:
   port: 9876
   host: localhost
