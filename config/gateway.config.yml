@@ -3,6 +3,10 @@ http:
 https:
   port: 8443
   hostname: 0.0.0.0
+  tls:
+    'default':
+      key: /usr/local/share/ca-certificates/ssl.key
+      cert: /usr/local/share/ca-certificates/ssl.crt
 admin:
   port: 9876
   host: localhost
