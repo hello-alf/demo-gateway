@@ -7,9 +7,21 @@ apiEndpoints:
   api:
     host: localhost
     paths: '/ip'
+  users:
+    host: localhost
+    paths: '/api/users'
+    methods: ["GET"]
+  posts:
+    host: localhost
+    paths: '/api/posts'
+    methods: ["GET"]
 serviceEndpoints:
   httpbin:
     url: 'https://httpbin.org'
+  usersServer:
+    url: 'https://jsonplaceholder.typicode.com/users'
+  postsServer:
+    url: 'https://jsonplaceholder.typicode.com/posts'
 policies:
   - basic-auth
   - cors
@@ -29,4 +41,20 @@ pipelines:
       - proxy:
           - action:
               serviceEndpoint: httpbin 
+              changeOrigin: true
+  users:
+    apiEndpoints:
+      - users
+    policies:
+      - proxy:
+          - action:
+              serviceEndpoint: usersServer 
+              changeOrigin: true
+  posts:
+    apiEndpoints:
+      - posts
+    policies:
+      - proxy:
+          - action:
+              serviceEndpoint: postsServer 
               changeOrigin: true
