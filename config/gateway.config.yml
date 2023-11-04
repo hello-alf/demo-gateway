@@ -1,8 +1,9 @@
 http:
   port: 8080
+  hostname: 0.0.0.0
 admin:
   port: 9876
-  host: 0.0.0.0
+  host: localhost
 apiEndpoints:
   api:
     host: localhost
