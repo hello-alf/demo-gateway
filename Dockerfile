@@ -10,6 +10,8 @@ COPY package.json package.json
 
 RUN apk add --no-cache tini
 
+RUN npm install
+
 COPY . . 
 
 CMD ["npm", "start"]
