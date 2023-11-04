@@ -2,17 +2,17 @@ http:
   port: 8080
 admin:
   port: 9876
-  host: demo-gateway-dev-ptmm.3.us-1.fl0.io
+  host: 0.0.0.0
 apiEndpoints:
   api:
-    host: demo-gateway-dev-ptmm.3.us-1.fl0.io
+    host: 0.0.0.0
     paths: '/ip'
   users:
-    host: demo-gateway-dev-ptmm.3.us-1.fl0.io
+    host: 0.0.0.0
     paths: '/api/users'
     methods: ["GET"]
   posts:
-    host: demo-gateway-dev-ptmm.3.us-1.fl0.io
+    host: 0.0.0.0
     paths: '/api/posts'
     methods: ["GET"]
 serviceEndpoints:
