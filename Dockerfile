@@ -8,13 +8,7 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 8080
-
-# HTTPS
-EXPOSE 443 
-
-# Admin API
-EXPOSE 8443 
+EXPOSE 8080 
 
 RUN apk --no-cache add nodejs ca-certificates
 
