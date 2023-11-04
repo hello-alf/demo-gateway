@@ -10,6 +10,8 @@ COPY . .
 
 EXPOSE 8080 
 
+EXPOSE 9876 
+
 RUN apk --no-cache add nodejs ca-certificates
 
 CMD ["npm", "start"]
