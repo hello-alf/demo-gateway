@@ -1,6 +1,6 @@
 http:
   port: 8080
-http:
+https:
   port: 443
 admin:
   port: 9876
