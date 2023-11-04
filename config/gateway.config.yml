@@ -1,6 +1,8 @@
 http:
   port: 8080
   hostname: 0.0.0.0
+https:
+  port: 8443
 admin:
   port: 9876
   host: localhost
